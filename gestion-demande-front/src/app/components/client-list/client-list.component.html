@@ -1,0 +1,20 @@
+<div class="container mt-5">
+  <h2>Liste des Clients</h2>
+  <a routerLink="/add-client" class="btn btn-primary mb-3">Ajouter un client</a>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Adresse</th>
+        <th>Téléphone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let client of clients">
+        <td>{{ client.nom }}</td>
+        <td>{{ client.adresse }}</td>
+        <td>{{ client.tele }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
